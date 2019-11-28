@@ -3,8 +3,7 @@ layout: layouts/base.njk
 title: Title Strings
 ---
 
-<div class="content">
-    {%- for snippet in collections.snippets -%}
-        {{ snippet.templateContent.replace() }}
-    {%- endfor -%}
-</div>
+{%- for snippet in collections.snippets -%}
+    {%import "./_includes/components/snippet-box.njk" as snippetBox %}
+    {{ snippetBox.box(snippet.templateContent | safe, snippet.data.title, snippet.data.desc) }}
+{%- endfor -%}
