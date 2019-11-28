@@ -1,6 +1,6 @@
 ---
 title: CTE Test
-tags: snippets
+tags: snippet
 desc: "Cte is a sugar <a>syntax</a> used in testing"
 code: ""
 ---
