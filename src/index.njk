@@ -1,0 +1,10 @@
+---
+layout: layouts/base.njk
+title: Title Strings
+---
+
+<div class="content">
+    {%- for snippet in collections.snippets -%}
+        {{ snippet.templateContent.replace() }}
+    {%- endfor -%}
+</div>
